@@ -62,47 +62,40 @@ p{
 
 /* Menu
  * --------------------------------------- */
-#menu li {
+.navbar{
+	background-color: transparent;
+	border: 0;
+}
+.menu li {
 	display:inline-block;
+	font-size: 18px;
 	margin: 10px;
-	color: #000;
+	color: #fafafa;
 	background:#fff;
 	background: rgba(255,255,255, 0.5);
 	-webkit-border-radius: 10px;
             border-radius: 10px;
 }
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
-}
-#menu li a{
+.menu li a{
 	text-decoration:none;
+	color: #fafafa;
+}
+.navbar-inverse .navbar-nav>li>a{
+		color: #fafafa;	
+}
+.menu li.active a:hover{
 	color: #000;
 }
-#menu li.active a:hover{
-	color: #000;
-}
-#menu li:hover{
+.menu li:hover{
 	background: rgba(255,255,255, 0.8);
 }
-#menu li a,
-#menu li.active a{
+.menu li a,
+.menu li.active a{
 	padding: 9px 18px;
 	display:block;
 }
-#menu li.active a{
+.menu li.active a{
 	color: #fff;
-}
-#menu{
-	position:fixed;
-	top:0;
-	left:0;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0;
-	margin:0;
 }
 
 
@@ -299,7 +292,19 @@ p{
 #section4 p{
 	opacity: 0.6;
 }
-
+#section4 #colors{
+	right: 60px;
+	bottom: 0;
+	position: absolute;
+	height: 413px;
+	width: 258px;
+	background-image: url(imgs/colors.gif);
+	background-repeat: no-repeat;
+}
+form{
+	width: 50%;
+	margin: 0 auto;
+}
 /* Overwriting fullPage.js tooltip color
 * --------------------------------------- */
 #pp-nav.custom .pp-tooltip{

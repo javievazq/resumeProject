@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-clean-css');
 
 gulp.task('css', function() {
-    gulp.src('./jquery.pagepiling.css')
+    gulp.src('css/jquery.pagepiling.css')
         .pipe(sourcemaps.init())
         .pipe(gulp.dest('./dist'))
         .pipe(minifyCss({
@@ -20,7 +20,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-    gulp.src('./jquery.pagepiling.js')
+    gulp.src('js/jquery.pagepiling.js')
         .pipe(sourcemaps.init())
         .pipe(gulp.dest('./dist'))
         .pipe(uglify({
